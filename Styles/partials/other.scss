@@ -1,0 +1,34 @@
+/*OTHER*/
+@import './mixins.scss';
+.text-historia {
+    @include flex-center;
+}
+
+.historias {
+    display: flex;
+    gap: 10.625rem;
+    height: 31.25rem;
+
+    .hist {
+        border: 0.03125rem solid black;
+        @include text-center;
+        height: 25rem;
+        width: 28.125rem;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    body {
+        max-width: 795px;
+    }
+.historias {
+    gap: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .hist {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+}

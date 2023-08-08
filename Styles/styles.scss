@@ -1,0 +1,22 @@
+/*VAR*/
+$bg-color: #DCDCB6;
+$fo-color: #7A7A76;
+
+/*VAR*/
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}   
+@import './partials/header.scss';
+@import './partials/landing.scss';
+@import './partials/details.scss';
+@import './partials/main.scss';
+@import './partials/footer.scss';
+@import './partials/other.scss';
+@import './partials/contacto.scss';

@@ -1,0 +1,70 @@
+/*LANDING*/
+@import './mixins.scss';
+.container-landing {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .landing-2 {
+        @include flex-center;
+        flex-direction: column;
+        gap: 30px;
+
+        .title-landing {
+            @include text-center;
+            font-size: 3.125rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .description-container {
+            font-family: 'Gill Sans', sans-serif;
+            @include text-center;   
+            font-size: 1.1875rem;
+        }
+
+        .btn-container {
+            @include flex-center;
+            background-color: transparent;
+            border: none;
+            font-size: 1.25rem;
+            border: 0.03125rem solid transparent; 
+            border-radius: 1rem;
+            position: relative; 
+
+                &:hover {
+                    animation: rainbow-border 3s infinite linear;
+                }
+
+            .btn-landing {
+                cursor: pointer;
+                width: 6.25rem;
+                border: none;
+                font-size: 3.125rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 795px) {
+    body {
+        max-width: 795px;
+    }
+    .container-landing {
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        .landing-2 {
+            gap: 20px;
+            width: 500px;
+
+            .title-landing {
+                font-size: 2.5rem;
+            }
+
+            .description-container {
+                font-size: 1rem;
+            }
+
+            .btn-landing {
+                font-size: 2rem;
+            }
+        }
+    }
+}

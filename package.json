@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  },
+  "name": "coder-house-3ra",
+  "description": "Tercera Pre-entrega del Proyecto final  Nombre del proyecto= Bono Adoptions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranAchard/Proyecto-Final-CoderHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranAchard/Proyecto-Final-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/FranAchard/Proyecto-Final-CoderHouse#readme"
+}

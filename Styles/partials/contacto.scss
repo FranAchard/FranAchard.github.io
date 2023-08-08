@@ -1,0 +1,26 @@
+/*CONTACTO*/
+@import './mixins.scss';
+.form {
+    @include flex-center;
+    flex-direction: column;
+    @include text-center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+}
+
+
+
+@media screen and (max-width: 795px) {
+    body {
+        max-width: 795px;
+    }
+.form {
+    form {
+        gap: 1rem;
+    }
+}
+}

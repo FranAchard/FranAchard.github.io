@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Implementación de SEO -->
+    <title>Bono Adoptions - Adopta a tu nuevo amigo canino</title>
+    <meta name="description" content="Bono Adoptions es una plataforma que fomenta la adopción de animales y busca crear conciencia sobre la importancia de adoptar. Encuentra a tu nuevo compañero peludo hoy mismo.">
+    <meta name="keywords" content="adopción de animales, adopción de perros, adopción de gatos, mascotas en adopción">
+    <!-- Implementación de SEO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Styles/css/styles.css">
+    <script src="./index.js"></script>
+</head>
+
+<body data-bs-theme="light">
+    <!--HEADER-->
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html" class="titulo-nav">
+                    <h2 class="titulo-nav">Bono Adoptions</h2>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <a href="./home.html">
+                        <li><img src="../Assets/home-nav.png" class="icons-nav" alt="Home"></li>
+                    </a>
+                    <li><a href="./dog.html"><img src="../Assets/perro-nav.png" class="icons-nav" alt="Perro"></a></li>
+                    <li><a href="./cat.html"><img src="../Assets/cat-nav.png" class="icons-nav" alt="Gato"></a></li>
+                    <li><a href="./other.html"><img src="../Assets/mas-nav.png" class="icons-nav" alt="Más"></a></li>
+                    <li><a href="./contact.html"><img src="../Assets/contact-nav.png" class="icons-nav" alt="Contacto"></a></li>
+                    <li><button  onclick="cambiarTemas()" class="btn rounded-fill" id="dark-mode"><i id="dl-icon" class="bi bi-moon bi-lg"></button></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main>
+        <!--CARRUSEL-->
+        <div id="contelItem">
+            <div class="item-carrusel" id="item-carrusel-1">
+                <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                    <img src="../Assets/perro-dog-1.jpg" alt="Perro 1">
+                </div>
+                <div class="flechas-carrusel">
+                    <a href="#item-carrusel-3"><i class="bi bi-caret-left-square-fill"></i></a>
+                    <a href="#item-carrusel-2"><i class="bi bi-caret-right-square-fill"></i></a>
+                </div>
+            </div>
+            <div class="item-carrusel" id="item-carrusel-2">
+                <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                    <img src="../Assets/perro-dog-2.jpg" alt="Perro 2">
+                </div>
+                <div class="flechas-carrusel">
+                    <a href="#item-carrusel-1"><i class="bi bi-caret-left-square-fill"></i></a>
+                    <a href="#item-carrusel-3"><i class="bi bi-caret-right-square-fill"></i></a>
+                </div>
+            </div>
+            <div class="item-carrusel" id="item-carrusel-3">
+                <div class="tarjeta-carrusel" id="tarjeta-carrusel-3">
+                    <img src="../Assets/perro-dog-3.jpg" alt="Perro 3">
+                </div>
+                <div class="flechas-carrusel">
+                    <a href="#item-carrusel-2"><i class="bi bi-caret-left-square-fill"></i></a>
+                    <a href="#item-carrusel-1"><i class="bi bi-caret-right-square-fill "></i></a>
+                </div>
+            </div>
+        </div>
+        <!--CARRUSEL-->
+        <!--DETAIL-->
+        <div class="container-detail">
+            <h2 class="detail-titulo">Cosas a tener en cuenta</h2>
+            <div class="container-description">
+                <div class="detail-description">
+                    <h3>
+                        Alimentacion
+                    </h3>
+                    <section>
+                        <p>
+                            Al adoptar un perro, es fundamental brindarle una alimentación adecuada para asegurar su
+                            salud y bienestar. Aquí hay algunas pautas importantes a seguir para alimentar a tu nuevo
+                            compañero peludo.
+
+                            En primer lugar, es crucial determinar el tipo de comida más adecuado para tu perro.
+                            Consulta con el veterinario para identificar sus necesidades específicas según su edad,
+                            raza, tamaño y estado de salud. Generalmente, se puede optar por una dieta de alimentos
+                            secos (croquetas) o alimentos húmedos (enlatados), o una combinación de ambos.
+
+                            Establece horarios regulares para las comidas y evita alimentar a tu perro con restos de
+                            comida humana o alimentos poco saludables. Proporciona raciones adecuadas según las
+                            indicaciones del veterinario para mantener un peso corporal saludable.
+
+                            El agua fresca y limpia debe estar siempre disponible para tu perro. Hidratarlo
+                            adecuadamente es esencial para su bienestar general.
+                        </p>        
+                    </section>
+                </div>
+                <div class="detail-description">
+                    <h3>Espacio</h3>
+                    <section>
+                        <p>
+                            Al adoptar un perro, es vital asegurar un espacio adecuado para su bienestar. Proporciona un
+                            hogar acogedor y seguro, con suficiente espacio para que se mueva cómodamente. Ofrece una
+                            cama suave en un área tranquila y protegida. Si tienes un patio, asegúrate de que esté
+                            cercado para que pueda disfrutar al aire libre sin riesgos.
+
+                            Dedica tiempo diario para pasear y jugar, así se ejercitará y fortalecerás vuestro vínculo.
+                            Proporciona juguetes y actividades que estimulen su mente.
+
+                            Mantén el hogar libre de peligros y objetos tóxicos. Considera las necesidades específicas
+                            de la raza que adoptes, algunas pueden requerir más espacio y ejercicio.
+
+                            Recuerda que cada perro es único, por lo que es fundamental adaptar el espacio y las
+                            actividades a sus necesidades individuales. Brindarle un entorno adecuado permitirá que tu
+                            perro se sienta amado, seguro y feliz en su nuevo hogar. Con dedicación y cariño, ambos
+                            vivirán una vida plena y satisfactoria juntos.
+                        </p>
+                    </section>
+                </div>
+                <div class="detail-description">
+                    <h3>Higiene</h3>
+                    <section>
+                        <p>
+                            El cuidado e higiene adecuados son fundamentales para mantener a tu perro saludable y feliz.
+                            Bañarlo regularmente con productos suaves para perros mantendrá su pelaje limpio y libre de
+                            suciedad, evitando malos olores. Sin embargo, no es recomendable bañarlo en exceso, ya que
+                            podría eliminar los aceites naturales de su piel.
+
+                            Cepilla su pelaje periódicamente para evitar la formación de nudos y eliminar el pelo
+                            muerto. La frecuencia dependerá de la longitud y tipo de pelaje de tu perro.
+
+                            Recorta sus uñas con cuidado para evitar que se partan o causen incomodidad al caminar. Si
+                            no te sientes seguro haciéndolo tú mismo, acude a un veterinario o peluquero canino.
+
+                            Limpia sus oídos y dientes regularmente para prevenir infecciones y problemas dentales.
+                            Utiliza productos específicos para perros y consulta con el veterinario si tienes dudas.
+
+                            No olvides programar visitas regulares al veterinario para chequeos y vacunas. Un perro
+                            limpio y bien cuidado estará más cómodo, saludable y listo para disfrutar de la vida
+                            contigo.
+                        </p>    
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--DETAIL-->
+        <!--FOOTER-->
+        <footer>
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/francisco-achard-9862641b3/" class="icon-foot"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://github.com/FranAchard" class="icon-foot"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://twitter.com/achard_fran" class="icon-foot"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/_fran_achard/" class="icon-foot"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Bono Adoptions</h5>
+            </div>
+        </footer>
+        <!--FOOTER-->
+    </main>
+    <!--MAIN-->
+</body>
+
+</html>

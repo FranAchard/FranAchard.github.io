@@ -1,0 +1,72 @@
+/*HEADER*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.3125rem solid black;
+
+    .titulo-nav {
+        font-size: 2.5rem;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+    }
+
+    .nav-list {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.25rem;
+
+            .icons-nav {
+                width: 2.5rem;
+                border: 0.03125rem solid transparent; /* Cambiar a borde transparente para la animación */
+                border-radius: 1.5625rem;
+                position: relative; /* Agregar posición relativa */
+
+                &:hover {
+                    animation: rainbow-border 3s infinite linear; /* Aplicar animación al pasar el mouse */
+                }
+            }
+        }
+
+        #dark-mode {
+            background-color: transparent;
+            border: none;
+            font-size: 1.25rem;
+            border: 0.03125rem solid transparent; /* Cambiar a borde transparente para la animación */
+            border-radius: 1.25rem;
+            position: relative; /* Agregar posición relativa */
+
+                &:hover {
+                    animation: rainbow-border 3s infinite linear; /* Aplicar animación al pasar el mouse */
+                }
+        }
+    }
+}
+
+@keyframes rainbow-border {
+    0% {
+        border-color: red;
+    }
+    14% {
+        border-color: orange;
+    }
+    28% {
+        border-color: yellow;
+    }
+    42% {
+        border-color: green;
+    }
+    57% {
+        border-color: blue;
+    }
+    71% {
+        border-color: indigo;
+    }
+    85% {
+        border-color: violet;
+    }
+    100% {
+        border-color: red;
+    }
+}
