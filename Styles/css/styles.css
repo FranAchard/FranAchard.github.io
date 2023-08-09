@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*VAR*/
 /*VAR*/
 * {
@@ -31,23 +30,23 @@ nav .nav-list ul {
 }
 nav .nav-list ul .icons-nav {
   width: 2.5rem;
-  border: 0.03125rem solid transparent; /* Cambiar a borde transparente para la animación */
+  border: 0.03125rem solid transparent;
   border-radius: 1.5625rem;
-  position: relative; /* Agregar posición relativa */
+  position: relative;
 }
 nav .nav-list ul .icons-nav:hover {
-  animation: rainbow-border 3s infinite linear; /* Aplicar animación al pasar el mouse */
+  animation: rainbow-border 3s infinite linear;
 }
 nav .nav-list #dark-mode {
   background-color: transparent;
   border: none;
   font-size: 1.25rem;
-  border: 0.03125rem solid transparent; /* Cambiar a borde transparente para la animación */
+  border: 0.03125rem solid transparent;
   border-radius: 1.25rem;
-  position: relative; /* Agregar posición relativa */
+  position: relative;
 }
 nav .nav-list #dark-mode:hover {
-  animation: rainbow-border 3s infinite linear; /* Aplicar animación al pasar el mouse */
+  animation: rainbow-border 3s infinite linear;
 }
 
 @keyframes rainbow-border {
@@ -74,6 +73,46 @@ nav .nav-list #dark-mode:hover {
   }
   100% {
     border-color: red;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.3125rem solid black;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .nav-list {
+    margin-top: 1rem;
+  }
+  nav .nav-list ul {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  nav .nav-list ul .icons-nav,
+  nav .nav-list ul #dark-mode {
+    margin-top: 0.5rem;
+  }
+  nav .nav-list .titulo-nav {
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+  }
+  nav .nav-list #dark-mode {
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    border: 0.03125rem solid transparent;
+    border-radius: 1.25rem;
+    position: relative;
+  }
+  nav .nav-list #dark-mode:hover {
+    animation: rainbow-border 3s infinite linear;
   }
 }
 /*LANDING*/
@@ -122,10 +161,14 @@ nav .nav-list #dark-mode:hover {
 @media screen and (max-width: 795px) {
   body {
     max-width: 795px;
+    overflow-x: hidden;
   }
   .container-landing {
     overflow: hidden;
     grid-template-columns: 1fr;
+  }
+  .container-landing .img-landing {
+    width: 500px;
   }
   .container-landing .landing-2 {
     gap: 20px;
@@ -139,6 +182,54 @@ nav .nav-list #dark-mode:hover {
   }
   .container-landing .landing-2 .btn-landing {
     font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    max-width: 500px;
+  }
+  .container-landing {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .landing-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .landing-2 .title-landing {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .landing-2 .description-container {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .landing-2 .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 1rem;
+    position: relative;
+  }
+  .landing-2 .btn-container:hover {
+    animation: rainbow-border 3s infinite linear;
+  }
+  .landing-2 .btn-container .btn-landing {
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    border: none;
+    font-size: 1.8rem;
   }
 }
 /*DETAIL*/
@@ -224,13 +315,16 @@ a {
 
 /*FOOTER*/
 footer {
+  position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background: #7A7A76;
 }
+
 footer .redes {
   font-size: 1.5rem;
 }
@@ -242,6 +336,7 @@ footer .redes ul {
 footer .redes ul a {
   text-decoration: none;
 }
+
 footer h5 {
   font-size: 2rem;
   margin-left: 1.25rem;
@@ -252,7 +347,9 @@ footer h5 {
     max-width: 795px;
   }
   footer {
-    bottom: 0;
+    position: relative;
+    bottom: auto;
+    margin-top: auto;
   }
   footer .redes {
     font-size: 1.5rem;
@@ -283,6 +380,21 @@ footer h5 {
   width: 28.125rem;
 }
 
+@media screen and (max-width: 500px) {
+  .historias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .historias .hist {
+    border: 0.03125rem solid black;
+    text-align: center;
+    height: 25rem;
+    width: 90%;
+    margin-bottom: 1.25rem;
+  }
+}
 @media screen and (max-width: 795px) {
   body {
     max-width: 795px;
@@ -297,7 +409,6 @@ footer h5 {
     margin-bottom: 2rem;
   }
 }
-/*CONTACTO*/
 .form {
   display: flex;
   justify-content: center;
@@ -311,6 +422,14 @@ footer h5 {
   gap: 1.875rem;
 }
 
+@media screen and (max-width: 500px) {
+  #img-contact {
+    width: 500px;
+  }
+  .form form {
+    gap: 1rem;
+  }
+}
 @media screen and (max-width: 795px) {
   body {
     max-width: 795px;

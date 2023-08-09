@@ -1,5 +1,6 @@
 /*OTHER*/
 @import './mixins.scss';
+
 .text-historia {
     @include flex-center;
 }
@@ -17,18 +18,36 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .historias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        .hist {
+            border: 0.03125rem solid black;
+            @include text-center;
+            height: 25rem;
+            width: 90%;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
 @media screen and (max-width: 795px) {
     body {
         max-width: 795px;
     }
-.historias {
-    gap: 500px;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    .hist {
-        width: 90%;
-        margin-bottom: 2rem;
+    .historias {
+        gap: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .hist {
+            width: 90%;
+            margin-bottom: 2rem;
+        }
     }
-}
 }

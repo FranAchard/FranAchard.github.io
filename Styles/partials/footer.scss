@@ -1,49 +1,54 @@
 /*FOOTER*/
 footer {
+    position: relative;
     bottom: 0;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background: $fo-color;
+}
 
-    .redes {
-        font-size: 1.5rem;
+footer .redes {
+    font-size: 1.5rem;
 
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
 
-            a {
-                text-decoration: none;
-            }
+        a {
+            text-decoration: none;
         }
     }
+}
 
-    h5 {
-        font-size: 2rem;
-        margin-left: 1.25rem;
-    }
-}   
+footer h5 {
+    font-size: 2rem;
+    margin-left: 1.25rem;
+}
+
 @media screen and (max-width: 795px) {
     body {
         max-width: 795px;
     }
 
-footer {
-    bottom: 0;
+    footer {
+        position: relative;
+        bottom: auto;
+        margin-top: auto;
 
-    .redes {
-        font-size: 1.5rem;
+        .redes {
+            font-size: 1.5rem;
 
-        ul {
-            gap: 1rem;
+            ul {
+                gap: 1rem;
+            }
+        }
+
+        h5 {
+            font-size: 2rem;
         }
     }
-
-    h5 {
-        font-size: 2rem;
-    }
-}
 }

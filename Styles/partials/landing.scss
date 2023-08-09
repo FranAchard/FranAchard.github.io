@@ -2,8 +2,7 @@
 @import './mixins.scss';
 .container-landing {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-
+    grid-template-columns: 2fr 1fr; 
     .landing-2 {
         @include flex-center;
         flex-direction: column;
@@ -46,10 +45,14 @@
 @media screen and (max-width: 795px) {
     body {
         max-width: 795px;
+        overflow-x: hidden;
     }
     .container-landing {
         overflow: hidden;
         grid-template-columns: 1fr;
+        .img-landing{
+            width:500px;    
+        }
         .landing-2 {
             gap: 20px;
             width: 500px;
@@ -67,4 +70,53 @@
             }
         }
     }
+}
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+        max-width:500px;
+    }   
+    .container-landing {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+.landing-2 {
+    @include flex-center;
+    flex-direction: column;
+    gap: 20px;
+
+    .title-landing {
+        @include text-center;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .description-container {
+        font-family: 'Gill Sans', sans-serif;
+        @include text-center;   
+        font-size: 1rem;
+    }
+
+    .btn-container {
+        @include flex-center;
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        border: 0.1rem solid transparent; 
+        border-radius: 1rem;
+        position: relative; 
+
+        &:hover {
+            animation: rainbow-border 3s infinite linear;
+        }
+
+        .btn-landing {
+            cursor: pointer;
+            width: 100%;
+            max-width: 150px;
+            border: none;
+            font-size: 1.8rem;
+        }
+    }
+}
 }

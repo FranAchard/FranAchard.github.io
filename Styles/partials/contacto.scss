@@ -1,5 +1,5 @@
-/*CONTACTO*/
 @import './mixins.scss';
+
 .form {
     @include flex-center;
     flex-direction: column;
@@ -12,15 +12,26 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    #img-contact{
+        width:500px;
+    }
+    .form {
+        form {
+            gap: 1rem;
+        }
+    }
+}
 
 
 @media screen and (max-width: 795px) {
     body {
         max-width: 795px;
     }
-.form {
-    form {
-        gap: 1rem;
+
+    .form {
+        form {
+            gap: 1rem;
+        }
     }
-}
 }
